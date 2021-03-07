@@ -1,8 +1,20 @@
 // tugas 2 : program beberapa jenis perhitungan
 
 #include<iostream>
-#include<cmath>
 using namespace std;
+
+double pangkat(double k, int l) {
+    double c = 1;
+    if (l != 0) {
+        for (int j = 0; j < l; j++) {
+            c = c * k;
+        }
+        return c;
+    }
+    else {
+        return 1;
+    }
+}
 
 void menu() {
     cout << "Kalkulator Tugas 2, Menu: \n";
@@ -59,7 +71,7 @@ int main() {
         cin >> a;
         cout << "Masukkan nilai b: ";
         cin >> b;
-        cout << "a^(b) = " << pow(a,b);
+        cout << "a^(b) = " << pangkat(a,b);
         break;
 
         case 6:
