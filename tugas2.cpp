@@ -84,22 +84,22 @@ int main() {
         cout << "a^(b) = " << pangkat(a,b); // menggunakan fungsi pangkat yang sudah didefinisikan di awal
         break;
 
-        // integral tentu
+        // integral tentu, test case x^2 dari 0 sampai 3
         case 6: {
         cout << "===Integral Tentu dari fungsi (ax^n + bx^(n-1) + ... + konstanta)===\n";
         cout << "berapa pangkat tertinggi dari fungsi yang ingin di integralkan : "; // meminta input pangkat tertinggi sebagai acuan input lainnya
-        cin >> x;
+        cin >> x; // testcase : isi 2
         double integral[x+1]; // mendeklarasikan array integral
         for (int i = 0; i < x+1; i++) {
-            cout << "masukkan koefisien suku dengan pangkat " << i << " : ";
+            cout << "masukkan koefisien suku dengan pangkat " << i << " : "; // testcase : isi 0; 0; 1 secara urut
             cin >> koef;
             integral[i] = (koef); // mengisi array integral dengan koefisien dari tiap suku
         }
         // meminta input batas bawah dan batas atas integral
         cout << "Masukkan batas bawah dari integral : ";
-        cin >> bawah;
+        cin >> bawah; //testcase : masukkan 0
         cout << "Masukkan batas atas dari integral : ";
-        cin >> atas;
+        cin >> atas; //testcase : masukkan 3
         div = 0.01;
         sum = 0;
         a = bawah;
