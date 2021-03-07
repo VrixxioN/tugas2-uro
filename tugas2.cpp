@@ -95,7 +95,7 @@ int main() {
         while (b <= atas) {
             sumint = 0;
             for (int i = 0; i < x+1; i++) {
-                sumint = sumint + integral[i]*(pow(a,i)+pow(b,i));
+                sumint = sumint + integral[i]*(pangkat(a,i)+pangkat(b,i));
             }
             sum = sum + sumint*div*(0.5);
             a = a + div;
